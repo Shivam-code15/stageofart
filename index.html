@@ -9,38 +9,45 @@
             font-family: 'Arial', sans-serif; 
             margin: 0; 
             padding: 0; 
-            background-color: #fff5f5; 
-            background-image: url('brush-stroke-background.png');
+            background-color: #0A0A0A; 
+            background-image: url('futuristic-background.png');
+            color: #E0E0E0;
             background-size: cover;
             background-position: center; 
         }
         .hero { 
             text-align: center; 
             padding: 60px 20px; 
-            background-color: rgba(255, 235, 235, 0.9); 
-            color: #333; 
+            background-color: rgba(10, 10, 10, 0.85); 
+            color: #E0E0E0; 
             font-size: 20px;
         }
         .features, .testimonial, .event { 
             text-align: center; 
             padding: 40px 20px; 
-            background-color: rgba(255, 255, 255, 0.8);
-            margin: 20px;
+            background-color: rgba(15, 15, 15, 0.85);
+            margin: 20px auto;
+            max-width: 800px;
             border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0,255,255,0.3);
         }
         .cta { 
-            background-color: #ff4081; 
-            color: white; 
+            background-color: #00BFA5; 
+            color: #0A0A0A; 
             padding: 12px 25px; 
             text-decoration: none; 
             border-radius: 8px; 
             font-size: 18px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            box-shadow: 0 2px 4px rgba(0,255,255,0.2);
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .cta:hover {
+            background-color: #00E676;
+            color: #0A0A0A;
         }
         footer { 
             background-color: #222; 
-            color: white; 
+            color: #E0E0E0; 
             text-align: center; 
             padding: 15px; 
             font-size: 16px;
@@ -50,10 +57,10 @@
             height: auto; 
             max-width: 600px; 
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 8px rgba(0,255,255,0.2);
         }
-        h1, h2 { font-family: 'Brush Script MT', cursive; color: #ff4081; }
-        p { font-size: 18px; }
+        h1, h2 { font-family: 'Arial', sans-serif; color: #00BFA5; }
+        p { font-size: 18px; color: #E0E0E0; }
     </style>
 </head>
 <body>
@@ -75,19 +82,15 @@
 
     <div class="testimonial">
         <h2>What Artists Say</h2>
-        <img src="testimonials.webp" alt="Artist Sharing Experience" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+        <img src="testimonials.webp" alt="Artist Sharing Experience" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,255,255,0.2);">
         <p>"Stage of Art has transformed the way I connect with other artists and share my work." - Alex, Painter</p>
     </div>
 
     <div class="event">
         <h2>Don't Miss Our Launch Event!</h2>
-        <img src="launch.webp" alt="Event Launch" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+        <img src="launch.webp" alt="Event Launch" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,255,255,0.2);">
         <p>Register for the online launch event with live performances, art showcases, and more.</p>
     </div>
 
     <footer>
         <p>Follow us on social media | Contact us at contact@stageofart.com</p>
-    </footer>
-
-</body>
-</html>
